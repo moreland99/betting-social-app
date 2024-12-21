@@ -1,0 +1,20 @@
+// Import Firebase functions
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDM0NWX3EWVlufnGl03Su0Qv3WZLHZNRBM",
+  authDomain: "socialsports-f49ee.firebaseapp.com",
+  projectId: "socialsports-f49ee",
+  storageBucket: "socialsports-f49ee.appspot.com",
+  messagingSenderId: "1033817778833",
+  appId: "1:1033817778833:web:5e298f5aa18c58017c2d30",
+  measurementId: "G-3P26XCB1W5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
